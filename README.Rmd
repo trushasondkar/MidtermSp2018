@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # Spring 2017 TRGN510 Midterm
 
 *Please replace your name with your name on line 6 above in author
-** Due 2/27/17 by 12:00 Pacific Time Zone **
+** Due 2/27/18 by 12:00PM Pacific Time Zone **
 
 This is an R Markdown document and your exam. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. Please EMAIL ME the Readme.Rmd file to turn it on - davidwcr@usc.edu.  This will be your completed exam.
 
