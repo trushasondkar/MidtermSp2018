@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 *Please replace your name with your name on line 6 above in author
 ** Due 2/27/17 by 12:00 Pacific Time Zone **
 
-This is an R Markdown document and your exam. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
+This is an R Markdown document and your exam. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. Please EMAIL ME the Readme.Rmd file to turn it on - davidwcr@usc.edu.  This will be your completed exam.
 
 There are different types of questions.  The first are multiple choice, fill in blank or true false.  The second are code block.Please edit the markdown such by either (1) striking *italicized* words that are incorrect using ~~strikethrough~~ (\~\~strikethrough\~\~), (2) deleting the incorrect *italicized* terms, or (3) putting the correct answer where requested.
 
