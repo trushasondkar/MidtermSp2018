@@ -1,0 +1,255 @@
+---
+title: "Midterm"
+author: "David Craig"
+date: "2/22/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Spring 2017 TRGN510 Midterm
+
+*Please replace your name with your name on line 6 above in author
+** Due 2/27/17 by 12:00 Pacific Time Zone **
+
+This is an R Markdown document and your exam. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
+
+There are different types of questions.  The first are multiple choice, fill in blank or true false.  The second are code block.Please edit the markdown such by either (1) striking *italicized* words that are incorrect using ~~strikethrough~~ (\~\~strikethrough\~\~), (2) deleting the incorrect *italicized* terms, or (3) putting the correct answer where requested.
+
+See below for an example.  We see that both _true_ and _false_ are options.  To answer the question, we delete _false_
+
+## Example 1
+
+**Before the exam**
+
+* It is __true__ __false__ that the earth is round and the average temperature of the earth has risen within our lifetime
+
+**After you edited by deleting __false__ or crossing it out, any one of these is ok **
+
+* It is __true__ that the earth is round and the average temperature of the earth has risen within our lifetime
+* It is __true__ ~~_false_~~ that the earth is round and the average temperature of the earth has risen within our lifetime
+
+## Example 2 - Codeblock edit
+
+How would I list the files in my home directory, ordered by size such that the lowest size are at the bottom, and print the size of the files in a human readable format listing on the last 10 lines?
+
+* In this you would start with an empty codeblock, and then you would edit it so that correct commands work within R.
+
+Before:
+
+```{bash, echo = FALSE}
+echo "I haven't answered and so this comment is here"
+```
+
+After
+```{bash, echo = FALSE}
+ls -lSh ~ | tail
+```
+
+## Types of data (any language): 14 points
+
+* "2" is a __Null__ __String__ __Integer__ __Float__  __Boolean__ datatype.
+* 2 is a __Null__ __String__ __Integer__ __Float__ __Boolean__ datatype.
+* 2.05 is an __Null__ __String__ __Integer__ __Float__  __Boolean__ datatype.
+* 3.0 is an __Null__ __String__ __Integer__ __Float__  __Boolean__datatype.
+* "" is an __Null__ __String__ __Integer__ __Float__  __Boolean__ datatype.
+* "false" is an __Null__ __String__ __Integer__ __Fload__  __Boolean__ datatype.
+* TRUE is an __Null__ __String__ __Integer__ __Fload__  __Boolean__ datatype.
+
+## Types of data (R): 16 points
+
+* When we run the command *a<-c("d",1,"b")* in *R*, creates a __dataframe__ __array__ __file__ __cat__ stored in *a*.
+
+* After we create a variable *a* and fill it with data using the command a<-c("d",1,"b"), we can subset to *d<-a[2]*.  The type of data found in *d* is of type __string__ __integer__ __boolean__ __null__.
+
+* Put within the code block a command for loading in the ggplot2 library.  You may have to install.packages first - I do not expect that in the code block.  Then put in a command that creates a dataframe called "diamonds_dataframe" using the diamond function.  Then put in a command that prints out the mean of the price.  The code block should have around 3 lines - but as long as the mean of the price is provided, it is correct even with fewer lines
+
+```{r, echo = FALSE}
+print("I haven't answered and so this comment is here")
+```
+
+If you were to load in the diamonds dataset from the ggplot2 library, what type of data is found within diamonds$carat?
+
+>  __Your Answer Here__
+
+* Please make a violin plot from the diamond dataset where the X-axis is "cut" and Y-axis is "price"
+
+```{r, echo = FALSE}
+ggplot(diamonds, aes(x = cut, y = price)) + 
+  geom_violin() + scale_y_log10()
+```
+
+
+
+*These questions may involve concepts that you don't know exactly because the point is to be
+able to solve new qeuestions.  Thus to an extent you are expected to may need a little research.*
+
+* csv files are typically __comma__ __space__ __colon__ deliminited
+
+* The data below is typically __json__ __XML__ __tsv__?
+
+> data ={
+        name: "John",
+        address: {
+            street: "459 E Jon St.",
+            city: "Springfield,
+            state: "Illinois",
+        },
+        age:14
+    }
+
+* In the example above, data.age is  __Null__ __String__ __Integer__ __Boolean__ data-type
+
+## Licenses (12 Points)
+*If you feel you want to qualify your answer, you are allowed to add some assumptions and I'll accept it.  This is not needed though*
+
+* It is __True__ __False__, If I published my old code working under an MIT license, I can  at my new I can utilize that code within a new application without asking for written permission from my prior employer provided I acknowledge the prior copyrights.
+
+* It is __True__ __False__, I can include code from my prior company that was put out open within GNU GPLv3 embedded within a new project at a new company provided I acknowledge the prior copyrights within a commercial software within the App store.
+
+* It is __True__ __False__, I didn't put a license file in my code but I posted it on github while working in a research laboratory. Because of my lack of thoroughness, I forgot the license file.  I can still use it because its free of all licenses
+
+
+### What is your current path?
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### What is the date?
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### Please make a new directory under the directory you are in called "mydirectory"
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+###  What are the last 5 commands you have in your history
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+### Please put the following data into a file called "numbers.txt" using bash in R in a code block, where each number is on its own line using echo and the appropriate optional tag.
+
+*1234
+*12121
+*3434
+*123
+*12341239879
+
+Above - the markdown asterisk is just to show you that its on its own line. Please don't put the astrisk in the file.
+```{bash, echo = FALSE}
+echo  "Replace me with a bash code block creating a file numbers.txt where the above numbers are in it - each on its own line"
+```
+
+### Please cat the file numbers.txt you just created
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+### How many characters and how many lines are in the file?
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+### Please create bash or bash set of lines using anything from sed, nawk, python or etc to commify the list of numbers in thousands place to the screen.  For example: 1,234 or 12,121
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### Please make the 'numbers.txt' file private such that only you can read and write it.  Nobody at the group level can read it, write or execute it.
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### Please make the file 'numbers.txt' such that you can read and write to it, and everyone else on the computer both world and group can just read it.
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+###  Please scrape or download the information behind the gene PTEN into a file from this web-page:
+https://ghr.nlm.nih.gov/gene/PTEN
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### Question:  Please echo your PATH - the directory where executable programs go such that you don't have to write the full path to run them.  
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### Question:  Please add ~/bin to your existing path
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### Question:  Please find files ending in md in your current directory
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### Question:  Please put all in the previous commands in your history into a file and call that file "history.txt"
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### Question:  Please print the first 5 lines of your history by piping history into head
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### Question:  How would I specify to send me a reminder email every 8 minutes using a crontab?
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+### Question: What is the first line of a BASH script?
+
+```{bash, echo = FALSE}
+echo "Replace me with a bash code block answering the question"
+```
+
+
+
+
+
+
+***
+
+<!-- The text below is just to reformat the page, using css styling -->
+```{r results="asis", echo = FALSE}
+cat("
+<style>
+h1 {
+    background-color: #990000;
+    color:#FFF;
+    text-align:center;
+}
+h2 {
+   background-color:#f3d6d6;
+   text-align:center;
+   color:#333
+}
+h3 {
+   margin-left:-5px;
+   color:#333
+}
+
+</style>
+")
+```
