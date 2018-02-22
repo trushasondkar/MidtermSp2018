@@ -77,8 +77,7 @@ If you were to load in the diamonds dataset from the ggplot2 library, what type 
 * Please make a violin plot from the diamond dataset where the X-axis is "cut" and Y-axis is "price"
 
 ```{r, echo = FALSE}
-print("I haven't answered and so this comment is here = Where is my plot?")
-
+print("I haven't answered and so this comment is here")
 ```
 
 
