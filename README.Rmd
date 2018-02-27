@@ -203,7 +203,7 @@ echo $PATH
 ### Question:  Please add ~/bin to your existing path
 
 ```{bash, echo = FALSE}
-PATH=$PATH:~/opt/bin
+PATH=$PATH:~/bin
 ```
 
 ### Question:  Please find files ending in md in your current directory
