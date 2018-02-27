@@ -166,7 +166,7 @@ cat numbers.txt
 ### How many characters and how many lines are in the file?
 
 ```{bash, echo = FALSE}
-wc -c -l assignment1.sh
+wc -c -l numbers.txt
 ```
 
 ### Please create bash or bash set of lines using anything from sed, nawk, python or etc to commify the list of numbers in thousands place to the screen.  For example: 1,234 or 12,121
